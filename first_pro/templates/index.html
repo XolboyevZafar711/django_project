@@ -5,8 +5,14 @@
     <title>Hello WOrld</title>
 </head>
 <body>
-    <h3>
-        Hello
-    </h3>
+
+<div>
+    {% for list in lists %}
+
+   <a href="items/{{ list.id }}"><p> {{ list.name }} </p></a>
+
+    {% endfor %}
+</div>
+
 </body>
 </html>
